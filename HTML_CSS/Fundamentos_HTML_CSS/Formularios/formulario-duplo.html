@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Duplo</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulário Duplo</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Formulário de Cadastro</h2>
+            <form action="cadastro.html" method="post">
+                <label for="name-cadastro">Nome:</label>
+                <input type="text" id="name-cadastro" name="name" required>
+                <br><br>
+                <label for="email-cadastro">Email:</label>
+                <input type="email" name="email" id="email-cadastro" required>
+                <br><br>
+                <label for="password-cadastro">Senha:</label>
+                <input type="password" name="password" id="password-cadastro" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Login</h2>
+            <form action="login.html" method="post">
+                <label for="email-login">Email:</label>
+                <input type="email" name="email" id="email-login" required>
+                <br><br>
+                <label for="password-login">Senha:</label>
+                <input type="password" name="password" id="password-login" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

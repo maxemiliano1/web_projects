@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="formulario.html" method="GET">
+                <div>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <label for="datenasc">Data Nascimento:</label>
+                    <input type="date" name="date" id="datenasc" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" required placeholder="Digite sua Senha" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="Mínimo 8 caracteres, uma letra maiúscula e um número">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </main>    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div class="img-sign">
+        <img src="/HTML_CSS/HTML_CSS_Avancado/sign_up/assets/Sign_up.svg" alt="Image Sign Up">
+    </div>
+
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="teste.html" method="get">
+            <div class="container-name">
+                <div class="firstname">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Your first name" required>
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Your last name" required>
+                </div>
+            </div>    
+            <div class="email-password">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required , minlength="8">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                <p>I agree to the <a href="https://www.termsfeed.com/dictionary/terms-and-conditions-definition/" target="_blank">Terms and Conditions</a></p>
+            </div>
+            <button type="submit">Sign Up</button>
+            
+        </form>
+    </div>
+</body>
+</html>

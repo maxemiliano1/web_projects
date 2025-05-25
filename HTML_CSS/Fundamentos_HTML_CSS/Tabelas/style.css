@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    margin: 20px 0px 50px 0px;    
+}
+
+.table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+.table thead {
+    background-color: #00000094;
+    color: #fff;
+}
+
+.table th, td{
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #e6dfdf;
+}
+.table tbody tr:hover {
+    background-color: rgb(255, 241, 41);
+}
+
