@@ -21,5 +21,5 @@ Mais projetos serão adicionados conforme avanço nos estudos!
 ## 📲 Me acompanhe
 
 - 🌐 Portfólio em construção
-- 🔗 [LinkedIn](https://www.linkedin.com/in/max-emiliano-cardoso-e-silva-370a87221/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/maxemiliano13)
 - 💻 [Outros repositórios no GitHub](https://github.com/maxemiliano1)
