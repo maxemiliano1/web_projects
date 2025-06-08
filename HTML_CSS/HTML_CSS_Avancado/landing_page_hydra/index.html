@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Hydra VR</title>
@@ -62,45 +65,86 @@
             </div>
         </div>
 
-        <div class="contact-us-icons">
-            <a href="#">
-                <div class="box-contact-us-icon">
-                    <img src="assets/image/chevron-circle-left.svg" alt="">
-                    <div class="imag-contact-us-icon">
-                        <img src="assets/image/Location-Icon.svg" alt="Image Location Icon">                      
-                    </div>
-                    <div>
-                        <h2>Pay Us a Visit</h2>
-                        <p>Union St, Seattle, WA 98101, United States</p>
-                    </div>
-                    <img src="assets/image/chevron-circle-right.svg" alt="">
-                </div>
-            </a>
+        <div class="carrossel">
+            <button class="prev">
+                <img src="assets/image/chevron-circle-left.svg" alt="Image left Seta">
+            </button>
 
-            <a href="tel:+">
-                <div class="box-contact-us-icon">
+            <div class="carrossel-container">
+                <div class="carrossel-item">
                     <div class="imag-contact-us-icon">
-                        <img src="assets/image/phone-call.svg" alt="Image Phone Icon">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div>
-                        <h2>Give Us a Call</h2>
-                        <p>(110) 1111-1010</p>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <h2>Pay Us a Visit</h2>
+                            <p>Union St, Seattle, WA 98101, United States</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
 
-            <a href="mailto:">
-                <div class="box-contact-us-icon">
+                <div class="carrossel-item">
                     <div class="imag-contact-us-icon">
-                        <img src="assets/image/mail.svg" alt="Image Email Icon">
+                        <i class="fa-solid fa-phone-volume"></i>
                     </div>
-                    <div>
-                        <h2>Send Us a Message</h2>
-                        <p>Contact@HydraVTech.com</p>
-                    </div>
+                    <a href="tel:+">
+                        <div>
+                            <h2>Give Us a Call</h2>
+                            <p>(110) 1111-1010</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
 
+
+                <div class="carrossel-item">
+                    <div class="imag-contact-us-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <a href="mailto:">
+                        <div>
+                            <h2>Send Us a Message</h2>
+                            <p>Contact@HydraVTech.com</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <button class="next">
+                <img src="assets/image/chevron-circle-right.svg" alt="Image right Seta">
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <div id="box-section">
+            <div class="cta">
+                <h2 class="sub-title-padrao"><span>INTRODUCTION</span><br>TO HYDRA VR</h2>
+                <div class="content-section-primary">
+                    <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+                        nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo
+                        quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                        lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                </div>
+            </div>
+
+            <div class="box-img-content-section">
+                <div class="imag-content-section">
+                    <img src="assets/image/vr2.png" alt="Image">
+                </div>
+                <div class="content-section-secundary">
+                    <h2 class="sub-title-padrao"><span>ABOUT</span><br>HYDRA VR</h2>
+                    <p>Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus
+                        urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
+                        dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
+                        Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
+                        sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
+                        cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+                        retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.</p>
+                    <a href="#" class="bnt">LET’S GET IN TOUCH</a>
+                </div>
+            </div>
         </div>
     </section>
 
