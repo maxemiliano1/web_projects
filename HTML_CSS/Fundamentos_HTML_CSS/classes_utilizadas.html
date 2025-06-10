@@ -1,0 +1,169 @@
+<!-- 📦 Estrutura base HTML com classes reutilizáveis -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Base</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container flex align-center space-between">
+            <div class="logo">LOGO</div>
+            <nav class="nav">
+                <ul class="menu flex gap-2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de destaque -->
+    <section class="section hero">
+        <div class="container center-text">
+            <h1 class="title">Bem-vindo ao Projeto</h1>
+            <p class="subtitle">Sua jornada começa aqui.</p>
+            <a href="#" class="btn btn-primary">Começar</a>
+        </div>
+    </section>
+
+    <!-- Carrossel -->
+    <section class="section carrossel-section">
+        <div class="container">
+            <div class="carrossel-container">
+                <div class="carrossel-item card">
+                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info">
+                        <h3 class="card-title">Endereço</h3>
+                        <p class="desc">Rua Exemplo, 123</p>
+                    </div>
+                </div>
+                <!-- outros itens... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container center-text">
+            <p class="text">&copy; 2025 Max Dev</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- /* style.css: Base de classes reutilizáveis */ -->
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #302C42;
+color: #fff;
+}
+
+.container {
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+padding: 2rem;
+}
+
+.flex {
+display: flex;
+}
+
+.center-text {
+text-align: center;
+}
+
+.align-center {
+align-items: center;
+}
+
+.space-between {
+justify-content: space-between;
+}
+
+.gap-2 {
+gap: 2rem;
+}
+
+.btn {
+padding: 1.2rem 2.4rem;
+border-radius: 4rem;
+text-decoration: none;
+font-weight: 600;
+text-transform: uppercase;
+transition: 0.3s;
+display: inline-block;
+}
+
+.btn-primary {
+background: linear-gradient(90deg, #8176AF, #C0B7E8);
+color: #343045;
+}
+
+.btn-primary:hover {
+background: #4f4479;
+color: #fff;
+}
+
+.card {
+background: #2c2543;
+padding: 2rem;
+border-radius: 2rem;
+text-align: center;
+}
+
+.card-title {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.desc {
+font-size: 1.4rem;
+}
+
+.section {
+padding: 6rem 0;
+}
+
+.menu {
+list-style: none;
+}
+
+.menu li a {
+color: #fff;
+text-decoration: none;
+font-size: 1.4rem;
+}
+
+.menu li a:hover {
+text-decoration: underline;
+}
+
+.icon-box {
+font-size: 3rem;
+color: #C0B7E8;
+margin-bottom: 1rem;
+}
+</style>
