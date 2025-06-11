@@ -648,15 +648,23 @@ section .box-content a {
 
 
 .carrossel-cards {
-    display: fle;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 100%;
+    min-width: 38rem;
 }
 
 .carrossel-container-cards {
     display: flex;
+    align-items: center;
     width: 100%;
+    padding: 0 1rem;
+    gap: 2rem;
     overflow-x: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    /* scroll-behavior: smooth;
+    scrollbar-width: none; */
+
 }
 
 .carrossel-container-cards::-webkit-scrollbar {
@@ -670,8 +678,9 @@ section .box-content a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2.9rem 0;
-    min-width: 32rem;
+    padding: 2.9rem 3.2rem;
+    max-width: 30rem;
+    min-width: 30rem;
     border-radius: 40px;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 }
@@ -680,6 +689,7 @@ section .box-content a {
     min-width: 19rem;
     min-height: 19rem;
     max-width: 19rem;
+    margin-bottom: 3rem;
 }
 
 .imag-carrossel-card img {
@@ -689,7 +699,57 @@ section .box-content a {
     box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.13);
 }
 
-@media (max-width: 2000px) {
+.carrossel-item-cards h3 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #C0B7E854;
+}
+
+.carrossel-item-cards p {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 2;
+    font-weight: 400;
+    margin-top: 2.2rem;
+    margin-bottom: 3.5rem;
+}
+
+.carrossel-item-cards a {
+    width: 100%;
+    text-align: center;
+}
+
+
+.carrossel-cards .next,
+.carrossel-cards .prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    padding: 2rem;
+    font-size: 2rem;
+    box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.13);
+    color: #433D60;
+    position: relative;
+}
+
+.carrossel-cards .next {
+    right: 2rem;
+}
+
+.carrossel-cards .prev {
+    left: 2rem;
+}
+
+/* @media (max-width: 2000px) {
+    body {
+        padding-bottom: 10rem;
+    }
+} */
+
+@media (min-width: 1px) {
     body {
         padding-bottom: 10rem;
     }
