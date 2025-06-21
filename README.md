@@ -15,7 +15,7 @@ Este repositório reúne projetos práticos desenvolvidos por mim em HTML, CSS e
 
 ## 🛠️ Em breve...
 
-Mais projetos serão adicionados conforme avanço nos estudos!
+Mais projetos serão adicionados conforme avanço nos estudos
 
 ---
 
