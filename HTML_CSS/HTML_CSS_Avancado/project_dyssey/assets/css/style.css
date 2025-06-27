@@ -62,15 +62,15 @@ body {
     right: 0;
     top: 7.2rem;
     width: 100%;
-    height: 60vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    background-color: #3f4865;
+    z-index: 99;
 }
 
 
 .nav-list {
-    margin-top: 2.5rem;
     list-style: none;
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -78,25 +78,24 @@ body {
 .bnt-mobile {
     display: block;
     text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 800;
+    color: var(--secundary-color);
+    background-color: #3f4865;
+    font-weight: 300;
     font-size: 2.5rem;
-    padding: 1rem;
-    background-color: #a9c2cb;
-    border-radius: 20px;
+    padding: 2rem;
     text-align: center;
-    margin-bottom: 1.9rem;
     width: 100%;
+    border-bottom: #2a2f3e 3px solid;
 }
 
 .bnt-mobile {
     display: none;
     border-style: none;
-    width: 90%;
     position: absolute;
-    top: 44rem;
-    right: 5%;
+    top: 36rem;
+    right: 0;
     justify-content: center;
+    border-bottom: #2A2F3E 3px solid;
 }
 
 .ativo {
@@ -131,6 +130,7 @@ body {
 
     .nav-item a,
     .bnt-mobile {
+        color: var(--primary-color);
         font-size: 1.6rem;
         font-weight: 600;
         padding: 0;
@@ -138,6 +138,7 @@ body {
         white-space: nowrap;
         cursor: pointer;
         background-color: transparent;
+        border: none;
     }
 
     .bnt-mobile {
@@ -149,20 +150,20 @@ body {
         text-decoration: underline;
     }
 
-    .bnt-all,
     .bnt-mobile {
         background-color: var(--tertiary-color);
+        box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
         color: var(--secundary-color);
         padding: 1.6rem 4rem;
         font-size: 1.8rem;
         font-weight: 600;
         border-radius: 12px;
         transition: all 0.3s ease;
+        display: block;
     }
 
     .bnt-all:hover {
-        background-color: #dfdcdc;
-        color: var(--primary-color);
+        background-color: rgba(0, 0, 0, 0.795);
         transition: all 0.3s ease;
     }
 }
@@ -176,7 +177,104 @@ body {
         margin-right: 3rem;
     }
 
-    .logo-container{
+    .logo-container {
         min-width: 19.1rem;
     }
+}
+
+.container-bg {
+    width: 100%;
+    max-width: 170rem;
+    margin: 0 auto;
+}
+
+.card-bg-all {
+    width: 100%;
+    height: 38.1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-bg-astronauta {
+    background-image: url(../img/planet.jpg);
+    background-position: bottom left;
+    display: flex;
+}
+
+.card-bg-all h2 {
+    color: var(--secundary-color);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.title-bg {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    max-width: 30rem;
+    min-width: 30rem;
+}
+
+
+.container-astronauta-girl {
+display: flex;
+flex-direction: column;
+position: relative;
+top: -25rem;
+}
+
+.content-astranauta {
+    order: 2;
+}
+
+.content-all-p {
+    color: #171E27;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.content-astranauta .content-all-p {
+    margin-bottom: 2.4rem;
+}
+
+.bnt-all{
+    background-color: var(--tertiary-color);
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+    color: var(--secundary-color);
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.links-astronauta a {
+display: flex;
+align-items: center;
+color: #020305;
+text-decoration: none;
+font-size: 2rem;
+margin-top: 3.5rem;
+}
+
+.links-astronauta a img {
+    margin-left: 1rem;
+}
+
+.bg-astronauta-girl {
+    
+    position: relative;
+    order: 1;
+    height: 50rem;
+    max-width: 800px;
+    background-image: url(../img/lost-in-space-3d-cute-girl-in-astronaut-costume-transparent-background-free-png\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.cards-item-astronauta {
+    background-color: #fff;
 }
