@@ -633,3 +633,125 @@ section {
 }
 
 /* End Section Article */
+
+
+
+/* BG education */
+
+.container-section-education {
+    margin-bottom: -7rem;
+}
+
+.container-bg-education {
+    background-image: url(../img/planet2\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 39.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.container-bg-education h2 {
+    color: var(--secundary-color);
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 1.4;
+    max-width: 120rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.container-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem 3rem;
+    position: relative;
+    top: -7rem;
+}
+
+.card-education {
+    background-color: var(--secundary-color);
+    border-radius: 24px;
+    box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.377);
+    padding: 2.5rem;
+    width: 26.7rem;
+}
+
+.card-education span {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #A9C2CB;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.card-education .content-all-cards {
+    margin-top: 2rem;
+}
+
+@media (min-width:768px) {
+
+    .container-section-education {
+        padding: 0 2.5rem;
+        margin-bottom: -13rem;
+        overflow-y: hidden;
+    }
+
+    .container-bg-education {
+        background-image: url(../img/planet2.jpg);
+        border-radius: 40px;
+    }
+
+    .container-bg-education h2 {
+        margin-top: 3.5rem;
+        font-size: 3.6rem;
+    }
+
+    .container-education {
+        align-items: flex-start;
+        top: -13rem;
+        justify-content: space-around;
+    }
+
+    .card-education {
+        width: 100%;
+        min-height: 28.2rem;
+        width: 26.7rem;
+        max-width: 40rem;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .container-bg-education h2 {
+        font-size: 4.8rem;
+    }
+
+    .container-education {
+        flex-wrap: nowrap;
+    }
+
+    .card-education {
+        width: 100%;
+        min-width: 28rem;
+        height: 32rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-education span {
+        font-size: 4.6rem;
+    }
+
+    .content-all-cards {
+        font-size: 1.6rem;
+    }
+}
+
+/* End BG education */
+
