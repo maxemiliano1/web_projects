@@ -758,6 +758,225 @@ section {
 
 /* Section Join */
 
+.container-join {
+    margin-top: 7rem;
+}
+
+.box-join {
+    background-image: url(../img/planet3mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-join h2 {
+    color: var(--secundary-color);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.box-join p {
+    color: var(--secundary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+    line-height: 1.9;
+}
+
+.box-input {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-input input {
+    max-width: 40rem;
+    padding: 2rem 2rem;
+    border: 5px solid;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    border-style: none;
+}
+
+.box-input input::placeholder {
+    color: rgba(23, 30, 39, 0.50);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.box-input input:focus {
+    outline: none;
+    border: 1.5px solid rgba(255, 0, 0, 0.596);
+}
+
+.box-input button {
+    max-width: 40rem;
+    padding: 1.8rem 2rem;
+    border: none;
+    margin-top: 1.2rem;
+    border-radius: 16px;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #A9C2CB;
+    color: var(--secundary-color);
+    box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.50);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box-input button:hover {
+    background-color: #a9c2cbcb;
+    transition: all 0.3s ease;
+}
+
+
+@media (min-width:768px) {
+    .container-join {
+        padding: 0 2.5rem;
+    }
+
+    .box-join {
+        border-radius: 40px;
+        background-image: url(../img/planet3.jpg);
+    }
+
+    .box-join p {
+        max-width: 70rem;
+        font-size: 1.6rem;
+    }
+
+    .box-input {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .box-input input {
+        max-width: 60rem;
+        width: 100%;
+    }
+
+    .box-input button {
+        padding: 1.8rem 3rem;
+        margin: 0;
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .box-join h2 {
+        font-size: 4.8rem;
+    }
+}
 
 /* End Section Join */
 
+
+/* Footer */
+
+footer {
+    margin-top: 3rem;
+}
+
+footer .header-container {
+    display: block;
+    height: auto;
+}
+
+.nav-footer {
+    margin-top: 2rem;
+}
+
+.footer-nav-list {
+    list-style: none;
+}
+
+.nav-item-footer {
+    margin-bottom: 2rem;
+}
+
+.nav-item-footer a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.nav-item-footer a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+
+.footer-nav-list-2 {
+    display: flex;
+    gap: 3rem;
+}
+
+
+@media (min-width:768px) {
+
+    footer {
+        height: 20rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav-list {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .footer-nav-list-2 {
+        margin-left: 2rem;
+    }
+}
+
+
+@media (min-width:1024px) {
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-footer {
+        flex-wrap: nowrap;
+        margin-left: 1rem;
+    }
+
+}
+
+/* End Footer */
+
+/* Copy */
+
+.container-copyright {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .container-copyright {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* End Copy */
